@@ -29,8 +29,7 @@
       background-position: center;
       background-repeat: no-repeat;
       font-family: system-ui, sans-serif;
-      overflow-y: auto;
-      overflow-x: hidden;
+      overflow: hidden;
       padding: 16px;
     }
 
@@ -137,7 +136,9 @@
       display: none;
       margin-top: 24px;
       padding: 28px;
-      min-height: 820px;
+      min-height: min(820px, 75vh);
+      max-height: 85vh;
+      overflow-y: auto;
       background: linear-gradient(rgba(255, 214, 231, 0.4), rgba(255, 238, 246, 0.4)), url('vii.jpg');
       background-size: cover;
       background-position: center top;
